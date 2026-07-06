@@ -9,21 +9,13 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+/* 1. SE UNIFICÓ .card-arriba EN UN SOLO BLOQUE PARA EVITAR DUPLICADOS */
 .card-arriba {
   width: 100%;
-  /* Definí una altura fija para que todas las portadas midan igual */
-  height: 200px; 
-  
-  /* Esto hace que la imagen cubra todo el espacio sin deformarse */
+  height: 150px; /* Altura unificada para las portadas de las tarjetas */
   background-size: cover;
-  
-  /* Centra la imagen para que el corte sea equilibrado */
   background-position: center;
-  
-  /* Evita que el fondo se duplique si la imagen es muy chica */
   background-repeat: no-repeat; 
-  
-  /* Opcional: añade bordes redondeados arriba si la tarjeta los lleva */
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -44,11 +36,11 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semitransparente */
+  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Asegura que se vea por encima de la interfaz de la compu */
+  z-index: 9999;
   cursor: zoom-out;
   animation: fadeIn 0.2s ease-out;
 }
@@ -57,7 +49,7 @@ body {
   max-width: 90%;
   max-height: 90vh;
   border-radius: 8px;
-  object-fit: contain; /* Mantiene la proporción sin deformar ni pixelar */
+  object-fit: contain;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   animation: scaleUp 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -78,7 +70,6 @@ body {
   opacity: 0.7;
 }
 
-/* Animación de entrada suave para la imagen */
 @keyframes scaleUp {
   from {
     transform: scale(0.9);
@@ -123,17 +114,9 @@ body {
   border-radius: 50%;
 }
 
-.circulo-rojo {
-  background: #ff5f57;
-}
-
-.circulo-amarillo {
-  background: #ffbd2e;
-}
-
-.circulo-verde {
-  background: #28c840;
-}
+.circulo-rojo { background: #ff5f57; }
+.circulo-amarillo { background: #ffbd2e; }
+.circulo-verde { background: #28c840; }
 
 nav ul {
   list-style: none;
@@ -223,12 +206,6 @@ main {
   transform: translateY(-5px);
 }
 
-.card-arriba {
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-}
-
 .card-abajo {
   padding: 15px;
 }
@@ -257,7 +234,6 @@ main {
   --transition: 350ms;
   --carpeta-W: 200px;
   --carpeta-H: 140px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,7 +254,6 @@ main {
   height: var(--carpeta-H);
   animation: float 2.5s infinite ease-in-out;
   transition: transform var(--transition) ease;
-
 }
 
 .carpeta .parte-arriba,
@@ -343,17 +318,9 @@ main {
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
 }
 
 .detalle-proyecto {
@@ -408,7 +375,6 @@ main {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -429,6 +395,7 @@ main {
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  animation: slideInLeft 0.8s ease forwards;
 }
 
 .sobremi-izq img {
@@ -436,10 +403,18 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: 50% 30%;
+  transition: transform 0.6s ease;
+}
+
+.sobremi-izq:hover img {
+  transform: scale(1.04);
 }
 
 .sobremi-der {
   max-width: 700px;
+  opacity: 0;
+  animation: slideInRight 0.8s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .sobremi-der h1 {
@@ -503,16 +478,24 @@ main {
   gap: 20px;
 }
 
+/* 2. SE REDUJO LA DUPLICACIÓN DE .contact-caja */
 .contact-caja {
   display: block;
   padding: 30px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
   text-decoration: none;
   color: white;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-caja:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
 }
 
 .contact-caja h3 {
@@ -525,28 +508,9 @@ main {
   font-size: 14px;
 }
 
-.contact-caja {
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.contact-caja:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.sobremi-izq {
-  animation: slideInLeft 0.8s ease forwards;
-}
-
-.sobremi-der {
-  opacity: 0;
-  animation: slideInRight 0.8s ease forwards;
-  animation-delay: 0.2s;
+.contact-caja:visited,
+.contact-caja:active {
+  color: white;
 }
 
 @keyframes slideInLeft {
@@ -554,7 +518,6 @@ main {
     opacity: 0;
     transform: translateX(-40px);
   }
-
   to {
     opacity: 1;
     transform: translateX(0);
@@ -566,19 +529,10 @@ main {
     opacity: 0;
     transform: translateX(40px);
   }
-
   to {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.sobremi-izq img {
-  transition: transform 0.6s ease;
-}
-
-.sobremi-izq:hover img {
-  transform: scale(1.04);
 }
 
 .skills {
@@ -600,250 +554,3 @@ main {
 
 .lista-skills span {
   padding: 8px 16px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 14px;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  cursor: default;
-}
-
-.lista-skills span:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
-  transition: background 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.45);
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
-}
-
-.grid-imagen {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.grid-imagen img {
-  width: 100%;
-  height: 350px;       /* <-- FORZA una altura fija igual para todas */
-  object-fit: cover;   /* <-- CORTA de forma inteligente para que no se estiren */
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  object-position: center; /* <-- Mantiene el centro de la imagen visible */
-}
-
-@media (max-width: 768px) {
-
-  body {
-    align-items: flex-start;
-    padding: 30px 0;
-    height: 115vh;
-  }
-  #content {
-  display: block;
-}
-
-  .ventana {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .sidebar {
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 25px;
-  }
-
-  .acciones-ventana {
-    margin-bottom: 0;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 25px;
-  }
-
-  .nav-item {
-    margin-bottom: 0;
-  }
-
-main {
-  padding: 40px;
-  overflow-y: auto;
-
-  display: flex;
-}
-
-  .seccion-sobremi {
-    flex-direction: column;  
-    align-items: center;     
-    gap: 40px;               
-  }
-
-  .sobremi-izq {
-    width: 100%;
-    max-width: none;
-    height: 350px;
-    border-radius: 20px;
-  }
-
-  .vista-compu {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-top: 40px;
-  }
-
-  .item-compu {
-    --carpeta-W: 210px;
-    --carpeta-H: 145px;
-  }
-
-  .video-proyecto-grid,
-  .grid-imagen {
-    grid-template-columns: 1fr;
-  }
-
-  .proyectos-grid {
-    grid-template-columns: 1fr;
-  }
-
-}
-
-@media (max-width: 430px) {
-
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 30px 0;
-  }
-
-  .ventana {
-    grid-template-columns: 1fr;
-    height: auto;
-    width: 92%;
-    border-radius: 24px;
-  }
-
-  .sidebar {
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 15px;
-  }
-
-  .nav-item {
-    margin-bottom: 0;
-  }
-
-  main {
-    padding: 35px 28px;
-  }
-  
-  .seccion-sobremi {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  
-
-  .sobremi-izq {
-    width: 100%;
-    max-width: 320px;
-    height: 400px;
-  }
-
-  .sobremi-der h1 {
-    font-size: 32px;
-  }
-
-  .vista-compu {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    margin-top: 30px;
-  }
-
-  .item-compu {
-    --carpeta-W: 220px;
-    --carpeta-H: 150px;
-  }
-
-  .proyectos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .seccion-contacto h1 {
-    font-size: 34px;
-  }
-
-  .acciones-ventana {
-    display: none;
-  }
-
-}
-
-@media (max-width: 360px) {
-
-  .sidebar{
-    padding: 30px;
-  }
-
-  main {
-    padding: 25px 18px;
-  }
-
-  .item-compu {
-    --carpeta-W: 190px;
-    --carpeta-H: 130px;
-  }
-
-}
-
-.contact-caja {
-  color: white;
-  text-decoration: none;
-}
-
-.contact-caja:visited,
-.contact-caja:active,
-.contact-caja:hover {
-  color: white;
-}
