@@ -118,10 +118,10 @@ let proyectosData = [
     label: "Diseño Gráfico / Ilustración",
     image: "img/boceto 2 copia 4.jpg",
     images: [
-      "img/boceto 2 copia 4.jpg",
-      "img/BILLIE POP ART.jpg",
-      "img/billie verde3.png",
-      "img/no time to dieee.jpg"
+      "img/billie-verde.png",
+      "img/time-to-die.png",
+      "img/pop-art.png",
+      "img/billie-azul.png"
     ],
     description: "Exploración estética y collage digital.",
     fullDescription: "Serie de posters inspirados en la discografía y universo visual de Billie Eilish. El proyecto se enfocó en la experimentación tipográfica, el uso de texturas de medio tono (halftone style), estética pop art y la creación de composiciones de alto contraste que reflejan la identidad de cada era musical."
