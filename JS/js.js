@@ -136,6 +136,7 @@ function renderSection(section) {
             <span>Cinema 4D</span>
             <span>Photoshop</span>
             <span>Illustrator</span>
+            <span>Lightroom</span>
           </div>
         </div>
 
