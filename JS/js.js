@@ -125,7 +125,19 @@ let proyectosData = [
     ],
     description: "Exploración estética y collage digital.",
     fullDescription: "Serie de posters inspirados en la discografía y universo visual de Billie Eilish. El proyecto se enfocó en la experimentación tipográfica, el uso de texturas de medio tono (halftone style), estética pop art y la creación de composiciones de alto contraste que reflejan la identidad de cada era musical."
-  }
+  },
+  {
+  title: "Diseño y Comunicación Visual",
+  category: "grafico",
+  label: "Diseño Gráfico",
+  image: "img/portada-forma-comunicar.jpg", 
+  images: [
+    "img/DCFDC.jpg",
+    "img/pajaro.jpg"
+  ],
+  description: "Composiciones tipográficas y experimentación visual.",
+  fullDescription: "Exploración de la tipografía y el collage digital como herramientas expresivas. A través del juego con jerarquías, el uso de texturas rústicas impresas y el contraste de formas orgánicas, se buscó potenciar el mensaje conceptual de cada pieza."
+},
 ];
 
 let navItems = document.querySelectorAll(".nav-item");
