@@ -665,16 +665,6 @@ main {
   display: block;
 }
 
-  .video-proyecto-grid,
-  .grid-imagen {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-imagen img {
-    height: 250px; /* <-- Ajuste de altura para que en celus quede perfecto */
-  }
-}
-
   .ventana {
     grid-template-columns: 1fr;
     height: auto;
