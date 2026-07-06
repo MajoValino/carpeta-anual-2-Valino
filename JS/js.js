@@ -144,9 +144,9 @@ let proyectosData = [
   label: "Diseño Gráfico / Social Media",
   image: "img/portada-iglesia.jpg", 
   images: [
-    "img/camp-mundo.jpeg",
+    "img/camp-mundo.jpg",
     "img/dia-deportes.jpg",
-    "img/teens-at-night.jpg",
+    "img/teens-at-night.jpeg",
     "img/teens-11.jpg",
     "img/teens-9.jpg",
   ],
