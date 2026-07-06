@@ -24,17 +24,17 @@ body {
 
 .grid-imagen {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crea las columnas prolijas */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   width: 100%;
 }
 
-/* El freno definitivo para que NO se vean gigantes */
+/* El control de escala que evita que se rendericen gigantes */
 .grid-imagen img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;      /* Hace que todas las imágenes mantengan la misma proporción */
-  object-fit: cover;        /* Recorta armónicamente la imagen dentro del recuadro */
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
@@ -582,6 +582,7 @@ main {
   transition: all 0.3s ease;
   cursor: default;
 }
+
 .lista-skills span:hover {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.35);
