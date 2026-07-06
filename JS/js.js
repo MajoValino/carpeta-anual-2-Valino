@@ -112,6 +112,20 @@ let proyectosData = [
   description: "Sistema gráfico y aplicaciones.",
   fullDescription: "En la materia Diseño de Identidad Corporativa para Web se nos propuso el desarrollo de un evento desde cero, incluyendo toda su identidad visual. Elegí crear un evento gastronómico de comida italiana llamado La Tavola, planteado como una experiencia de cuatro días donde cada jornada estaba dedicada a una pasta diferente."
 }
+  {
+  title: "Billie Eilish — Serie de Afiches",
+  category: "grafico",
+  label: "Diseño Gráfico / Ilustración",
+  image: "img/boceto 2 copia 4.jpg",
+  images: [
+    "img/boceto 2 copia 4.jpg",
+    "img/BILLIE POP ART.jpg",
+    "img/billie verde3.png",
+    "img/no time to dieee.jpg"
+  ],
+  description: "Exploración estética y collage digital.",
+  fullDescription: "Serie de posters inspirados en la discografía y universo visual de Billie Eilish. El proyecto se enfocó en la experimentación tipográfica, el uso de texturas de medio tono (halftone style), estética pop art y la creación de composiciones de alto contraste que reflejan la identidad de cada era musical."
+},
 ];
 
 let navItems = document.querySelectorAll(".nav-item");
@@ -230,6 +244,7 @@ function renderVistaProyectos() {
     { name: "Motion", filter: "motion" },
     { name: "3D", filter: "modeling" },
     { name: "Branding", filter: "branding" },
+    { name: "Diseño Gráfico", filter: "grafico" },
   ];
 
   categorias.forEach((cat) => {
