@@ -9,6 +9,8 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+
+
 /* 1. SE UNIFICÓ .card-arriba EN UN SOLO BLOQUE PARA EVITAR DUPLICADOS */
 .card-arriba {
   width: 100%;
@@ -20,13 +22,32 @@ body {
   border-top-right-radius: 8px;
 }
 
-.zoomable {
-  cursor: zoom-in;
+/* --- Grilla para los proyectos con imágenes (Vectora, La Tavola, Billie, etc.) --- */
+.grid-imagen {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Organiza en columnas */
+  gap: 20px;
+  width: 100%;
+}
+
+/* --- Esto es lo que frena que se vean gigantes --- */
+.grid-imagen img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; /* O podés usar object-fit: cover si preferís que sean simétricas */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
+/* Tu efecto de zoom que ya tenías */
+.zoomable {
+  cursor: zoom-in;
+}
+
 .zoomable:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 /* --- Estilos para el efecto de ampliar imagen (Lightbox) --- */
