@@ -78,7 +78,15 @@ let proyectosData = [
   image: "img/vectora.png",
   images: [
     "img/vectora-mockup1.jpg",
-    "img/vectora-mockup2.jpg"
+    "img/vectora-mockup2.jpg",
+    "img/creamos-movimiento.jpeg",
+    "img/damor-ritmo.jpeg",
+    "img/Disenar-es-explorar-sin limites.jpeg",
+    "img/diseno-sonrie.jpeg",
+    "img/expresar-ideas.jpeg",
+    "img/hacelo-unico.jpeg",
+    "img/somos-vect.jpeg",
+    "img/trabajemos.jpeg"
   ],
   description: "Identidad visual completa.",
   fullDescription: "En la materia Diseño de Identidad Corporativa para Web desarrollé un estudio de diseño ficticio llamado Vectora. La consigna consistía en construir una marca desde cero, definiendo concepto, personalidad, sistema visual y aplicaciones digitales. Se trabajó el desarrollo integral del branding, incluyendo logotipo, paleta cromática, tipografías, lineamientos gráficos y su adaptación a entornos web."
