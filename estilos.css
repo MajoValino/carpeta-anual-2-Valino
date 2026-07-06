@@ -9,6 +9,25 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+.card-arriba {
+  width: 100%;
+  /* Definí una altura fija para que todas las portadas midan igual */
+  height: 200px; 
+  
+  /* Esto hace que la imagen cubra todo el espacio sin deformarse */
+  background-size: cover;
+  
+  /* Centra la imagen para que el corte sea equilibrado */
+  background-position: center;
+  
+  /* Evita que el fondo se duplique si la imagen es muy chica */
+  background-repeat: no-repeat; 
+  
+  /* Opcional: añade bordes redondeados arriba si la tarjeta los lleva */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
 .zoomable {
   cursor: zoom-in;
   transition: transform 0.3s ease;
