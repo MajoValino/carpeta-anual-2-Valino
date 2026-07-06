@@ -647,9 +647,11 @@ main {
 
 .grid-imagen img {
   width: 100%;
+  height: 350px;       /* <-- FORZA una altura fija igual para todas */
+  object-fit: cover;   /* <-- CORTA de forma inteligente para que no se estiren */
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  object-fit: cover;
+  object-position: center; /* <-- Mantiene el centro de la imagen visible */
 }
 
 @media (max-width: 768px) {
@@ -661,6 +663,16 @@ main {
   }
   #content {
   display: block;
+}
+
+  .video-proyecto-grid,
+  .grid-imagen {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-imagen img {
+    height: 250px; /* <-- Ajuste de altura para que en celus quede perfecto */
+  }
 }
 
   .ventana {
