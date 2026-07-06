@@ -138,6 +138,21 @@ let proyectosData = [
   description: "Composiciones tipográficas y experimentación visual.",
   fullDescription: "Exploración de la tipografía y el collage digital como herramientas expresivas. A través del juego con jerarquías, el uso de texturas rústicas impresas y el contraste de formas orgánicas, se buscó potenciar el mensaje conceptual de cada pieza."
 },
+  {
+  title: "Adolescentes — Redes Sociales",
+  category: "grafico",
+  label: "Diseño Gráfico / Social Media",
+  image: "img/portada-iglesia.jpg", 
+  images: [
+    "img/camp-mundo.jpg",
+    "img/dia-deportes.jpg",
+    "img/teens-at-night.jpg",
+    "img/teens-11.jpg",
+    "img/teens-9.jpg",
+  ],
+  description: "Diseño de contenido digital para Instagram.",
+  fullDescription: "Desarrollo de piezas gráficas dinámicas para el Instagram del grupo de adolescentes de la iglesia. El proyecto consistió en diseñar flyers, anuncios de eventos y contenido digital enfocado en captar la atención de un público joven. Se trabajó con una estética moderna, colores vibrantes y composiciones de alto impacto visual para promocionar las actividades, reuniones y eventos especiales de la comunidad."
+}
 ];
 
 let navItems = document.querySelectorAll(".nav-item");
