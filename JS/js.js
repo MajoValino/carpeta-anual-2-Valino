@@ -39,7 +39,7 @@ let proyectosData = [
     videos: ["videos/processing1.mp4", "videos/processing2.mp4"],
     description: "Experimento visual con código creativo.",
     fullDescription:
-      "En el Taller de Arte Digital trabajamos con Processing como herramienta para la creación visual a través de código. Exploramos programación aplicada al arte generativo, experimentando con formas, movimiento e interacción. También en Diseño Digital 6 desarrollé proyectos en After Effects, trabajando animación, composición y motion graphics.",
+      "En el Taller de Arte Digital trabajamos con Processing como herramienta para la creación visual a través de código. Exploramos programación aplicada al arte generativo, experimentando con formas, movimiento e interacción. También en Diseño Digital 6 desarrollé proyectos en After Effects, trabajando animación, composition y motion graphics.",
   },
   {
     title: "Video Animado",
@@ -71,61 +71,61 @@ let proyectosData = [
     fullDescription:
       "Como proyecto final de la materia Modelado 3D, desarrollé un pequeño anuncio publicitario de un perfume utilizando Cinema 4D, software que aprendimos a lo largo de la cursada. El trabajo integró modelado, materiales, iluminación y animación.",
   },
-{
-  title: "Vectora",
-  category: "branding",
-  label: "D.I.C.W",
-  image: "img/vectora.png",
-  images: [
-    "img/vectora-mockup1.jpg",
-    "img/vectora-mockup2.jpg",
-    "img/creamos-movimiento.jpeg",
-    "img/damor-ritmo.jpeg",
-    "img/Disenar-es-explorar-sin limites.jpeg",
-    "img/diseno-sonrie.jpeg",
-    "img/expresar-ideas.jpeg",
-    "img/hacelo-unico.jpeg",
-    "img/somos-vect.jpeg",
-    "img/trabajemos.jpeg"
-  ],
-  description: "Identidad visual completa.",
-  fullDescription: "En la materia Diseño de Identidad Corporativa para Web desarrollé un estudio de diseño ficticio llamado Vectora. La consigna consistía en construir una marca desde cero, definiendo concepto, personalidad, sistema visual y aplicaciones digitales. Se trabajó el desarrollo integral del branding, incluyendo logotipo, paleta cromática, tipografías, lineamientos gráficos y su adaptación a entornos web."
-},
-{
-  title: "La Tavola",
-  category: "branding",
-  label: "D.I.C.W",
-  image: "img/tavola.png",
-  images: [
-    "img/tavola-mockup1.png",
-    "img/tavola-mockup2.png",
-    "img/Cronograma.png",
-    "img/italia-a-mtv.png",
-    "img/en-italia.png",
-    "img/mejor-pasta.png",
-    "img/dia-macaroni.png",
-    "img/dia-farfale.png",
-    "img/dia-rigatoni.png",
-    "img/dia-fusilli.png",
-    "img/comida-casera.png",
-  ],
-  description: "Sistema gráfico y aplicaciones.",
-  fullDescription: "En la materia Diseño de Identidad Corporativa para Web se nos propuso el desarrollo de un evento desde cero, incluyendo toda su identidad visual. Elegí crear un evento gastronómico de comida italiana llamado La Tavola, planteado como una experiencia de cuatro días donde cada jornada estaba dedicada a una pasta diferente."
-}
   {
-  title: "Billie Eilish — Serie de Afiches",
-  category: "grafico",
-  label: "Diseño Gráfico / Ilustración",
-  image: "img/boceto 2 copia 4.jpg",
-  images: [
-    "img/boceto 2 copia 4.jpg",
-    "img/BILLIE POP ART.jpg",
-    "img/billie verde3.png",
-    "img/no time to dieee.jpg"
-  ],
-  description: "Exploración estética y collage digital.",
-  fullDescription: "Serie de posters inspirados en la discografía y universo visual de Billie Eilish. El proyecto se enfocó en la experimentación tipográfica, el uso de texturas de medio tono (halftone style), estética pop art y la creación de composiciones de alto contraste que reflejan la identidad de cada era musical."
-},
+    title: "Vectora",
+    category: "branding",
+    label: "D.I.C.W",
+    image: "img/vectora.png",
+    images: [
+      "img/vectora-mockup1.jpg",
+      "img/vectora-mockup2.jpg",
+      "img/creamos-movimiento.jpeg",
+      "img/damor-ritmo.jpeg",
+      "img/Disenar-es-explorar-sin limites.jpeg",
+      "img/diseno-sonrie.jpeg",
+      "img/expresar-ideas.jpeg",
+      "img/hacelo-unico.jpeg",
+      "img/somos-vect.jpeg",
+      "img/trabajemos.jpeg"
+    ],
+    description: "Identidad visual completa.",
+    fullDescription: "En la materia Diseño de Identidad Corporativa para Web desarrollé un estudio de diseño ficticio llamado Vectora. La consigna consistía en construir una marca desde cero, definiendo concepto, personalidad, sistema visual y aplicaciones digitales. Se trabajó el desarrollo integral del branding, incluyendo logotipo, paleta cromática, tipografías, lineamientos gráficos y su adaptación a entornos web."
+  },
+  {
+    title: "La Tavola",
+    category: "branding",
+    label: "D.I.C.W",
+    image: "img/tavola.png",
+    images: [
+      "img/tavola-mockup1.png",
+      "img/tavola-mockup2.png",
+      "img/Cronograma.png",
+      "img/italia-a-mtv.png",
+      "img/en-italia.png",
+      "img/mejor-pasta.png",
+      "img/dia-macaroni.png",
+      "img/dia-farfale.png",
+      "img/dia-rigatoni.png",
+      "img/dia-fusilli.png",
+      "img/comida-casera.png",
+    ],
+    description: "Sistema gráfico y aplicaciones.",
+    fullDescription: "En la materia Diseño de Identidad Corporativa para Web se nos propuso el desarrollo de un evento desde cero, incluyendo toda su identidad visual. Elegí crear un evento gastronómico de comida italiana llamado La Tavola, planteado como una experiencia de cuatro días donde cada jornada estaba dedicada a una pasta diferente."
+  }, // <--- ACÁ FALTABA ESTA COMA
+  {
+    title: "Billie Eilish — Serie de Afiches",
+    category: "grafico",
+    label: "Diseño Gráfico / Ilustración",
+    image: "img/boceto 2 copia 4.jpg",
+    images: [
+      "img/boceto 2 copia 4.jpg",
+      "img/BILLIE POP ART.jpg",
+      "img/billie verde3.png",
+      "img/no time to dieee.jpg"
+    ],
+    description: "Exploración estética y collage digital.",
+    fullDescription: "Serie de posters inspirados en la discografía y universo visual de Billie Eilish. El proyecto se enfocó en la experimentación tipográfica, el uso de texturas de medio tono (halftone style), estética pop art y la creación de composiciones de alto contraste que reflejan la identidad de cada era musical."
+  }
 ];
 
 let navItems = document.querySelectorAll(".nav-item");
@@ -135,46 +135,46 @@ function renderSection(section) {
   content.innerHTML = "";
 
   if (section === "about") {
-  content.innerHTML = `
-    <div class="seccion-sobremi">
-      <div class="sobremi-izq">
-        <img src="img/foto-mia.jpg" alt="Foto de perfil">
-      </div>
-      <div class="sobremi-der">
-        <h1>María José Valiño</h1>
-        <h3>Estudiante de Diseño Multimedia · 3er año</h3>
-
-        <p>
-          Soy María José Valiño, estudiante en tercer año de Diseño Multimedia.
-          Me encanta experimentar y salir un poco de lo predecible.
-          Me apasiona el motion graphic y todo lo que implique movimiento y ritmo.
-        </p>
-
-        <p>
-          Siempre estoy probando cosas nuevas y buscando formas distintas
-          de encarar cada proyecto.
-        </p>
-
-        <div class="skills">
-          <h4>Skills</h4>
-          <div class="lista-skills">
-            <span>Premiere Pro</span>
-            <span>After Effects</span>
-            <span>Figma</span>
-            <span>HTML & CSS</span>
-            <span>JavaScript</span>
-            <span>Processing</span>
-            <span>Cinema 4D</span>
-            <span>Photoshop</span>
-            <span>Illustrator</span>
-            <span>Lightroom</span>
-          </div>
+    content.innerHTML = `
+      <div class="seccion-sobremi">
+        <div class="sobremi-izq">
+          <img src="img/foto-mia.jpg" alt="Foto de perfil">
         </div>
+        <div class="sobremi-der">
+          <h1>María José Valiño</h1>
+          <h3>Estudiante de Diseño Multimedia · 3er año</h3>
 
+          <p>
+            Soy María José Valiño, estudiante en tercer año de Diseño Multimedia.
+            Me encanta experimentar y salir un poco de lo predecible.
+            Me apasiona el motion graphic y todo lo que implique movimiento y ritmo.
+          </p>
+
+          <p>
+            Siempre estoy probando cosas nuevas y buscando formas distintas
+            de encarar cada proyecto.
+          </p>
+
+          <div class="skills">
+            <h4>Skills</h4>
+            <div class="lista-skills">
+              <span>Premiere Pro</span>
+              <span>After Effects</span>
+              <span>Figma</span>
+              <span>HTML & CSS</span>
+              <span>JavaScript</span>
+              <span>Processing</span>
+              <span>Cinema 4D</span>
+              <span>Photoshop</span>
+              <span>Illustrator</span>
+              <span>Lightroom</span>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-  `;
-}
+    `;
+  } // <--- ACÁ FALTABA ESTA LLAVE DE CIERRE
 
   if (section === "projects") {
     renderVistaProyectos();
@@ -200,16 +200,16 @@ function renderSection(section) {
       <div class="cards-contacto">
 
         <div class="contact-caja">
-    <h3>Email</h3>
-    <span>mariajosevalino1@gmail.com</span>
-  </div>
+          <h3>Email</h3>
+          <span>mariajosevalino1@gmail.com</span>
+        </div>
 
         <a href="https://www.linkedin.com/in/maria-jose-vali%C3%B1o-882601336/" 
-   target="_blank" 
-   class="contact-caja">
-  <h3>LinkedIn</h3>
-  <span>Ver perfil profesional</span>
-</a>
+           target="_blank" 
+           class="contact-caja">
+          <h3>LinkedIn</h3>
+          <span>Ver perfil profesional</span>
+        </a>
 
       </div>
 
@@ -228,6 +228,7 @@ navItems.forEach((item) => {
 });
 
 renderSection("about");
+
 function renderVistaProyectos() {
   content.innerHTML = `
     <h1>Proyectos</h1>
@@ -276,8 +277,8 @@ function renderVistaProyectos() {
 function abrirCarpeta(filter, event) {
   ultimaCategoria = filter;
 
- let carpeta = event.currentTarget;
- let front = carpeta.querySelector(".parte-arriba");
+  let carpeta = event.currentTarget;
+  let front = carpeta.querySelector(".parte-arriba");
 
   front.style.transform = "rotateX(-75deg) skewX(20deg)";
 
@@ -297,7 +298,6 @@ function abrirCarpeta(filter, event) {
 }
 
 function abrirProyecto(project) {
-
   let mediaSection = "";
   if (project.images && project.images.length > 0) {
     mediaSection = `
@@ -307,9 +307,7 @@ function abrirProyecto(project) {
         `).join("")}
       </div>
     `;
-  }
-
-  else if (project.videos && project.videos.length > 0) {
+  } else if (project.videos && project.videos.length > 0) {
     mediaSection = `
       <div class="video-proyecto-grid">
         ${project.videos.map(v => `
@@ -317,8 +315,7 @@ function abrirProyecto(project) {
         `).join("")}
       </div>
     `;
-  }
-  else if (project.video) {
+  } else if (project.video) {
     mediaSection = `
       <div class="video-proyecto">
         <video src="${project.video}" controls autoplay muted></video>
