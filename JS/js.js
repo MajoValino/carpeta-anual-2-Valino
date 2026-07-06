@@ -98,7 +98,16 @@ let proyectosData = [
   image: "img/tavola.png",
   images: [
     "img/tavola-mockup1.png",
-    "img/tavola-mockup2.png"
+    "img/tavola-mockup2.png",
+    "img/Cronograma.png",
+    "img/italia-a-mtv.png",
+    "img/en-italia.png",
+    "img/mejor-pasta.png",
+    "img/dia-macaroni.png",
+    "img/dia-farfale.png",
+    "img/dia-rigatoni.png",
+    "img/dia-fusilli.png",
+    "img/comida-casera.png",
   ],
   description: "Sistema gráfico y aplicaciones.",
   fullDescription: "En la materia Diseño de Identidad Corporativa para Web se nos propuso el desarrollo de un evento desde cero, incluyendo toda su identidad visual. Elegí crear un evento gastronómico de comida italiana llamado La Tavola, planteado como una experiencia de cuatro días donde cada jornada estaba dedicada a una pasta diferente."
