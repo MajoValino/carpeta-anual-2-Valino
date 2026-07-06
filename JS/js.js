@@ -116,7 +116,7 @@ let proyectosData = [
     title: "Billie Eilish — Serie de Afiches",
     category: "grafico",
     label: "Diseño Gráfico / Ilustración",
-    image: "img/boceto 2 copia 4.jpg",
+    image: "img/portada-billie.jpg",
     images: [
       "img/billie-verde.png",
       "img/time-to-die.png",
