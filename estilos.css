@@ -18,42 +18,57 @@ body {
   transform: scale(1.02);
 }
 
+/* --- Estilos para el efecto de ampliar imagen (Lightbox) --- */
 .lightbox {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semitransparente */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  animation: fadeIn 0.3s ease;
+  z-index: 9999; /* Asegura que se vea por encima de la interfaz de la compu */
   cursor: zoom-out;
+  animation: fadeIn 0.2s ease-out;
 }
 
 .lightbox img {
   max-width: 90%;
-  max-height: 90%;
-  border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-height: 90vh;
+  border-radius: 8px;
+  object-fit: contain; /* Mantiene la proporción sin deformar ni pixelar */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: scaleUp 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .lightbox-cerrar {
   position: absolute;
-  top: 25px;
-  right: 35px;
+  top: 20px;
+  right: 30px;
   color: white;
   font-size: 40px;
+  font-weight: bold;
   cursor: pointer;
-  opacity: 0.7;
-  transition: 0.2s ease;
+  user-select: none;
+  transition: opacity 0.2s;
 }
 
 .lightbox-cerrar:hover {
-  opacity: 1;
+  opacity: 0.7;
+}
+
+/* Animación de entrada suave para la imagen */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .ventana {
