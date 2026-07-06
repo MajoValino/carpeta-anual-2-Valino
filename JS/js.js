@@ -49,7 +49,7 @@ let proyectosData = [
     video: "videos/ratatuile.mp4",
     description: "Animación hecha a mano.",
     fullDescription:
-      "Proyecto final de Modelado 3D: anuncio publicitario de un perfume utilizando Cinema 4D. Incluyó modelado, materiales, iluminación y animación.",
+      "Proyecto de animación tradicional 2D basado en la icónica escena de Pixar. La pieza fue ilustrada y animada cuadro por cuadro (frame by frame) utilizando una tableta gráfica directamente en Adobe Photoshop, logrando un trazo orgánico y expresivo. Posteriormente, el material se exportó a Adobe After Effects, donde integré detalles visuales, efectos de iluminación, composición de escena y la edición final de audio y video.",
   },
   {
     title: "After Effects",
