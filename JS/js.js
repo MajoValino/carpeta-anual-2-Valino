@@ -270,7 +270,7 @@ function abrirProyecto(project) {
     mediaSection = `
       <div class="grid-imagen">
         ${project.images.map(img => `
-          <img src="${img}" alt="${project.title}">
+          <img src="${img}" alt="${project.title}" class="zoomable" onclick="abrirLightbox('${img}')">
         `).join("")}
       </div>
     `;
@@ -309,6 +309,20 @@ function abrirProyecto(project) {
 
   document.querySelector(".btn-volver").addEventListener("click", () => {
     renderProyectos(ultimaCategoria);
+  });
+}
+
+function abrirLightbox(src) {
+  let lightbox = document.createElement("div");
+  lightbox.classList.add("lightbox");
+  lightbox.innerHTML = `
+    <span class="lightbox-cerrar">&times;</span>
+    <img src="${src}" alt="Zoom">
+  `;
+  document.body.appendChild(lightbox);
+
+  lightbox.addEventListener("click", () => {
+    lightbox.remove();
   });
 }
 
